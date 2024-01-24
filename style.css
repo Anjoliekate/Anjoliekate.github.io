@@ -124,6 +124,7 @@ p {
 #about_container {
   align-items: center;
   display: grid;
+  padding-bottom: 100px;
 }
 
 .bigger_letters {
@@ -158,6 +159,11 @@ html {
   font-size: x-large;
   font-family: monospace;
 }
+
+#experience {
+  padding-bottom: 100px;
+}
+
 #experience ul {
   color: #5ca894;
   font-family: roboto;
@@ -170,7 +176,7 @@ html {
 #experience-label,
 #projects-label,
 #aboutMe {
-  padding-top: 200px;
+  padding-top: 20px;
   margin-bottom: 75px;
   color: #d3f6dd;
   font-size: xx-large;
@@ -189,19 +195,17 @@ html {
   }
 }
 
-.column {
-  padding-top: 200px;
-}
-
-#row {
+.row {
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
 }
 
@@ -237,18 +241,19 @@ html {
 }
 
 .card:hover .overlay {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .card img {
   display: block;
   transition: 0.5s ease;
   backface-visibility: hidden;
-  min-width: 50px;
   border-radius: 25px;
-  height: 400px;
   opacity: 1;
-  padding: 10px;
+  float: left;
+  width: 280px;
+  height: 400px;
+  object-fit: cover;
 }
 .card:hover img {
   opacity: 0.6;
